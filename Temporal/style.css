@@ -1,0 +1,95 @@
+html {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+body {
+  height: 100vh !important;
+  overflow: hidden;
+}
+
+.temporal {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+}
+
+.background {
+  background-color: #9c9b9f;
+  /* height: 100%; */
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.img-en-proceso {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 999999;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.img-en-proceso img {
+  width: inherit;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.texto {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  margin-top: 0.2rem;
+  z-index: 9999999999999;
+}
+
+@media (min-width: 1200px) {
+  .img-en-proceso {
+    position: absolute;
+    bottom: 0;
+    top: unset;
+  }
+
+  .img-en-proceso img {
+    height: 100%;
+  }
+}
